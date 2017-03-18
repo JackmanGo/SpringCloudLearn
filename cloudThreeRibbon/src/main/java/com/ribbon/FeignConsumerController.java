@@ -14,8 +14,8 @@ public class FeignConsumerController {
     public FeignConsumer feignConsumer;
 
     @RequestMapping(value = "/addInFeign", method = RequestMethod.GET)
-    public Integer add() {
-        return feignConsumer.add(10, 20);
+    public String add() {
+        return feignConsumer.add("jack");
     }
 
 }

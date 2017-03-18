@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Component
 public class HystrixInFeign implements FeignConsumer {
     @Override
-    public Integer add(@RequestParam(value = "a") Integer g, @RequestParam(value = "b") Integer h) {
-        return -9999;
+    String add(@RequestParam(value = "name") String g) {
+        return null;
     }
 }
